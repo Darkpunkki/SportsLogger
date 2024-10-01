@@ -21,10 +21,16 @@ First, clone the repository from GitHub:
 
 ```bash
 git clone https://github.com/darkpunk/SportsLogger.git
-cd sports-logger
+cd sportslogger
 ```
 
-3. Run the Application with Docker
+### 2. Build the Docker Image
+
+```bash
+docker build -t darkpunk/sportslogger .
+```
+
+### 3. Run the Application with Docker
 Run the application in a Docker container:
 
 ```bash
@@ -32,7 +38,7 @@ docker run -d -p 8080:8080 darkpunk/sportslogger
 ```
 The application will be accessible at http://localhost:8080 on your browser, depending on the interface (console or web-based).
 
-4. Pull the Pre-built Image from Docker Hub
+### 4. Pull the Pre-built Image from Docker Hub
 If you don’t want to build the image locally, you can pull it from Docker Hub:
 
 
@@ -42,7 +48,7 @@ docker pull darkpunk/sportslogger:latest
 docker run -d -p 8080:8080 darkpunk/sportslogger
 ```
 
-5. Running the Application in a Linux VM
+### 5. Running the Application in a Linux VM
 To run the application in a Linux virtual machine (VM):
 
 Set up a Linux VM using your preferred virtualization tool.
