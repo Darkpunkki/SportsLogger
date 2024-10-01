@@ -20,5 +20,5 @@ This is a simple Java-based application that allows users to log sports activiti
 First, clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/darkpunk/sports-logger.git
+git clone https://github.com/darkpunk/sportslogger.git
 cd sports-logger
