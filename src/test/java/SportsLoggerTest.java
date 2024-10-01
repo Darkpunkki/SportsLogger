@@ -23,8 +23,6 @@ class SportsLoggerTest {
     @Test
     void testViewActivitiesWithNoLoggedActivity() {
         logger.viewActivities();
-        // Since viewActivities() prints to the console, we can't assert the output easily here
-        // However, we can still test that no activities are present
         assertTrue(logger.activities.isEmpty(), "There should be no activities logged");
     }
 

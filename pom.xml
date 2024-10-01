@@ -34,23 +34,22 @@
 
     <build>
         <plugins>
-            <!-- JaCoCo plugin for code coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.7</version>
                 <executions>
                     <execution>
+                        <!-- Attach JaCoCo agent during the test phase -->
                         <goals>
-                            <!-- Runs JaCoCo during the test phase -->
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
                     <execution>
+                        <!-- Generate JaCoCo report during the 'verify' phase -->
                         <id>report</id>
                         <phase>verify</phase>
                         <goals>
-                            <!-- Generates the code coverage report -->
                             <goal>report</goal>
                         </goals>
                     </execution>
