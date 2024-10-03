@@ -67,7 +67,7 @@ Pull the Docker image from Docker Hub and run it as described above.
 └── README.md            # Project documentation (this file)
 ```
 
-Continuous Integration
+## Continuous Integration
 This project includes integration with Jenkins for CI/CD:
 
 Build: Jenkins pulls the code from GitHub and builds the application using Maven.
